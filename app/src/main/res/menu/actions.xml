@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:teste="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/act_camera"
+        android:title="@string/menu_camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        teste:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/act_agenda"
+        android:title="@string/menu_agenda"
+        android:icon="@android:drawable/ic_menu_agenda"
+        teste:showAsAction="ifRoom|withText"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/act_add"
+        android:title="@string/menu_add"
+        android:icon="@android:drawable/ic_menu_add"
+        teste:showAsAction="ifRoom|withText"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/act_delete"
+        android:title="@string/menu_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        teste:showAsAction="ifRoom|withText"
+        tools:ignore="AppCompatResource" />
+</menu>

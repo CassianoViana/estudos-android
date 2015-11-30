@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Aprendendo Android!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_msg">Hello World</string>
+    <string name="msg_btn_ir">Ir para segunda activity</string>
+    <string name="msg_btn_voltar">Voltar para a primeira activity</string>
+    <string name="txt_pergunta1">De qual linguagem de programação você gosta?</string>
+    <string name="txt_pergunta2">Qual paradigma de programação você utiliza?</string>
+    <string name="opcaoLinguagem1">Java</string>
+    <string name="opcaoLinguagem2">C++</string>
+    <string name="opcaoLinguagem3">C</string>
+    <string name="opcaoParadigma1">POO</string>
+    <string name="opcaoParadigma2">Procedural</string>
+    <string name="textCancelar">Cancelar</string>
+    <string name="textOk">OK</string>
+    <string name="labelDados">Dados</string>
+    <string name="label_nome">Nome</string>
+    <string name="label_sobrenome">Sobrenome</string>
+    <string name="content_a">Content A</string>
+    <string name="content_b">Content B</string>
+    <string name="txt_exemplo">Exemplo</string>
+    <string name="txt_inverter">Inveter!</string>
+    <string name="txt_original">Original</string>
+    <string name="str_feijao">Feijão</string>
+    <string name="str_550">R$5,50</string>
+    <string name="aprenderSpinners">Aprender Spinners</string>
+    <string name="aprenderListViewsEmFragments">Aprender ListView em Fragments</string>
+    <string name="aprenderDialogs">Aprender Dialogs</string>
+    <string name="dialog_simples">Dialog simples</string>
+    <string name="dialogo_opcoes">Dialogo opções</string>
+    <string name="diaogo_opcoes_radio">diálogo opções radio</string>
+    <string name="diaogo_opcoes_checkbox">diálogo de opções múltiplas</string>
+    <string name="dialogo_customizado">Diálogo customizado</string>
+    <string name="campo_texto_dialogo">Campo do texto do diálogo</string>
+    <string name="dialogo_data">Diálogo de data</string>
+    <string name="dialogo_hora">Diálogo de hora</string>
+    <string name="nao">Não</string>
+    <string name="sim">Sim</string>
+    <string name="action_bars_e_menus">Aprender ActionBar e menus</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_add">Adicionar</string>
+    <string name="menu_delete">Excluir</string>
+    <string name="menu_call">Chamar</string>
+    <string name="up_navigation">up navigation</string>
+    <string name="action_mode_1">Action Mode 1</string>
+    <string name="play">Play</string>
+    <string name="action_mode_2">action mode 2 (lixeira)</string>
+    <string name="excluir">Excluir</string>
+    <string name="popups">Popups</string>
+    <string name="navigation_drawer">NAVIGATION DRAWER</string>
+    <string name="open">Abrir</string>
+    <string name="close">Fechar</string>
+    <string name="titleChose">Escolha um planeta</string>
+    <string name="tabs">Tabs</string>
+    <string-array name="comidas">
+        <item>Feijão</item>
+        <item>Arroz</item>
+        <item>Batata</item>
+        <item>Carne</item>
+        <item>Tomate</item>
+    </string-array>
+
+    <string-array name="planets">
+        <item>Terra</item>
+        <item>Saturno</item>
+    </string-array>
+    <array name="planets_imgs">
+        <item>@drawable/terra</item>
+        <item>@drawable/saturno</item>
+    </array>
+
+</resources>

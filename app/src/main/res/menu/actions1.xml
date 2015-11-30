@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:teste="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/act_play"
+        android:title="@string/play"
+        android:icon="@android:drawable/ic_media_play"
+        teste:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+</menu>

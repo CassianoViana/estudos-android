@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cassiano.mytestapiapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".PrimeiraActivity"
+            android:label="Primeira">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SegundaActivity"
+            android:theme="@android:style/Theme.Material.Dialog" />
+
+        <activity android:name=".asynctask.ThreadLearningActivity" />
+        <activity android:name=".AsyncTaskLearningActivity" />
+        <activity android:name=".layouts.LinearLayoutLearningActivity" />
+        <activity android:name=".layouts.RelativeLayoutLearningActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".fragments.StaticFragmentActivity"/>
+        <activity android:name=".fragments.DynamicFragmentActivity"/>
+        <activity android:name=".communication.FragmentsCommunicationtActivity"/>
+        <activity android:name=".backStack.BackStackLearningActivity"/>
+        <activity android:name=".listViewAndAdapter.ListViewAndAdapterLearningActivity"/>
+        <activity android:name=".listsAndFragments.ListsAndFragmentsActivity"/>
+        <activity android:name=".spinner.SpinnerActivity"/>
+        <activity android:name=".dialogs.DialogsActivity"/>
+        <activity android:name=".actionBarAndMenus.actionBar.ActionBarAndMenusActivity"/>
+        <activity android:name=".actionBarAndMenus.upNavigation.UpNavigationActivity"/>
+        <activity android:name=".actionBarAndMenus.upNavigation.ProximaActivity">
+            <!--android:parentActivityName=".upNavigation.UpNavigationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".upNavigation.UpNavigationActivity"
+            />-->
+        </activity>
+        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity1"/>
+        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity2"/>
+        <activity android:name=".actionBarAndMenus.PopupActivity"/>
+        <activity android:name=".navigationDrawer.NavigationDrawerActivity"/>
+        <activity android:name=".tabs.TabsActivity"/>
+    </application>
+</manifest>
+

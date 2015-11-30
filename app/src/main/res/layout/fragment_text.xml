@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/dimenMargem">
+
+    <TextView
+        android:id="@+id/lbOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_original"/>
+
+    <EditText
+        android:id="@+id/editTextOriginal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_exemplo"
+        android:inputType="textCapSentences"/>
+
+    <Button
+        android:id="@+id/btnInverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_inverter"
+        android:background="@android:color/holo_blue_light"/>
+
+</LinearLayout>

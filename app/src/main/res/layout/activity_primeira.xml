@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tabs"
+            android:onClick="aprenderTabs"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer"
+            android:onClick="aprenderNavigationDrawer"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popups"
+            android:onClick="aprenderPopups"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_mode_2"
+            android:onClick="aprenderActionMode2"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_mode_1"
+            android:onClick="aprenderActionMode1"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/up_navigation"
+            android:onClick="aprenderUpNavigation"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_btn_ir"
+            android:onClick="next"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para activity de Thread"
+            android:onClick="aprenderThread"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para activity de AsyncTask"
+            android:onClick="aprenderAsyncTask"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para LinearLayout"
+            android:onClick="aprenderLinearLayout"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para RelativeLayout"
+            android:onClick="aprenderRelativeLayout"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para ProgressBar"
+            android:onClick="aprenderProgressBar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para layout estático"
+
+            android:onClick="aprenderFragmentsEstaticos"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ir para layout dinâmico"
+            android:onClick="aprenderFragmentsDinamicos"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprender comunicação entre fragments"
+            android:onClick="aprenderComunicacaoEntreFragments"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprender Back Stack"
+            android:onClick="aprenderBackStack"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprender ListView e Adapter"
+            android:onClick="aprenderListViewAndAdapter"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aprenderListViewsEmFragments"
+            android:onClick="aprenderListasEmFragments"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aprenderSpinners"
+            android:onClick="aprenderSpinners"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aprenderDialogs"
+            android:onClick="aprenderDialogs"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_bars_e_menus"
+            android:onClick="aprenderActionBarAndMenus"/>
+    </LinearLayout>
+
+</ScrollView>
