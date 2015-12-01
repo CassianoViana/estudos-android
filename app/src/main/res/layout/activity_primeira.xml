@@ -11,8 +11,26 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:text="@string/notificacoes"
+            android:onClick="aprenderNotificacoes"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/broadcasts_receivers"
+            android:onClick="aprenderBroadcasts"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:text="@string/tabs"
             android:onClick="aprenderTabs"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intents_1"
+            android:onClick="aprenderIntentsImplicitas"/>
 
         <Button
             android:layout_width="fill_parent"

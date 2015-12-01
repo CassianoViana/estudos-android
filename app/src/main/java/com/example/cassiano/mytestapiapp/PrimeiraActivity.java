@@ -13,15 +13,18 @@ import com.example.cassiano.mytestapiapp.actionBarAndMenus.actionModes.ActionMod
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.actionModes.ActionModeActivity2;
 import com.example.cassiano.mytestapiapp.asynctask.ThreadLearningActivity;
 import com.example.cassiano.mytestapiapp.backStack.BackStackLearningActivity;
+import com.example.cassiano.mytestapiapp.broadcasts.BroadcastActivity;
 import com.example.cassiano.mytestapiapp.communication.FragmentsCommunicationtActivity;
 import com.example.cassiano.mytestapiapp.dialogs.DialogsActivity;
 import com.example.cassiano.mytestapiapp.fragments.DynamicFragmentActivity;
 import com.example.cassiano.mytestapiapp.fragments.StaticFragmentActivity;
+import com.example.cassiano.mytestapiapp.intents.IntentsActivity;
 import com.example.cassiano.mytestapiapp.layouts.LinearLayoutLearningActivity;
 import com.example.cassiano.mytestapiapp.layouts.RelativeLayoutLearningActivity;
 import com.example.cassiano.mytestapiapp.listViewAndAdapter.ListViewAndAdapterLearningActivity;
 import com.example.cassiano.mytestapiapp.listsAndFragments.ListsAndFragmentsActivity;
 import com.example.cassiano.mytestapiapp.navigationDrawer.NavigationDrawerActivity;
+import com.example.cassiano.mytestapiapp.notificacoes.NotificacoesActivity;
 import com.example.cassiano.mytestapiapp.spinner.SpinnerActivity;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.upNavigation.UpNavigationActivity;
 import com.example.cassiano.mytestapiapp.tabs.TabsActivity;
@@ -191,6 +194,21 @@ public class PrimeiraActivity extends Activity {
 
     public void aprenderTabs(View view) {
         Intent intent = new Intent(this, TabsActivity.class);
+        startActivity(intent);
+    }
+
+    public void aprenderIntentsImplicitas(View view) {
+        Intent intent = new Intent(this, IntentsActivity.class);
+        startActivity(intent);
+    }
+
+    public void aprenderBroadcasts(View view) {
+        Intent intent = new Intent(this, BroadcastActivity.class);
+        startActivity(intent);
+    }
+
+    public void aprenderNotificacoes(View view) {
+        Intent intent = new Intent(this, NotificacoesActivity.class);
         startActivity(intent);
     }
 }

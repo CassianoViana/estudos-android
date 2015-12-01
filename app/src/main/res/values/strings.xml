@@ -53,6 +53,17 @@
     <string name="close">Fechar</string>
     <string name="titleChose">Escolha um planeta</string>
     <string name="tabs">Tabs</string>
+    <string name="intents_1">intents implícitas</string>
+    <string name="proximo">Próximo</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="navegador">Navegador</string>
+    <string name="basic">Básica</string>
+    <string name="broadcasts_receivers">BroadcastReceivers</string>
+    <string name="notificacoes">Notificações</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="notificacao1">100</string>
+    <string name="mostrar_2">Mostrar 2</string>
+    <string name="notificacao2">101</string>
     <string-array name="comidas">
         <item>Feijão</item>
         <item>Arroz</item>

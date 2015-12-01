@@ -1,54 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cassiano.mytestapiapp">
+    package="com.example.cassiano.mytestapiapp" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".PrimeiraActivity"
-            android:label="Primeira">
+            android:label="Primeira" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".SegundaActivity"
             android:theme="@android:style/Theme.Material.Dialog" />
-
         <activity android:name=".asynctask.ThreadLearningActivity" />
         <activity android:name=".AsyncTaskLearningActivity" />
         <activity android:name=".layouts.LinearLayoutLearningActivity" />
         <activity android:name=".layouts.RelativeLayoutLearningActivity" />
         <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".fragments.StaticFragmentActivity"/>
-        <activity android:name=".fragments.DynamicFragmentActivity"/>
-        <activity android:name=".communication.FragmentsCommunicationtActivity"/>
-        <activity android:name=".backStack.BackStackLearningActivity"/>
-        <activity android:name=".listViewAndAdapter.ListViewAndAdapterLearningActivity"/>
-        <activity android:name=".listsAndFragments.ListsAndFragmentsActivity"/>
-        <activity android:name=".spinner.SpinnerActivity"/>
-        <activity android:name=".dialogs.DialogsActivity"/>
-        <activity android:name=".actionBarAndMenus.actionBar.ActionBarAndMenusActivity"/>
-        <activity android:name=".actionBarAndMenus.upNavigation.UpNavigationActivity"/>
-        <activity android:name=".actionBarAndMenus.upNavigation.ProximaActivity">
-            <!--android:parentActivityName=".upNavigation.UpNavigationActivity">
+        <activity android:name=".fragments.StaticFragmentActivity" />
+        <activity android:name=".fragments.DynamicFragmentActivity" />
+        <activity android:name=".communication.FragmentsCommunicationtActivity" />
+        <activity android:name=".backStack.BackStackLearningActivity" />
+        <activity android:name=".listViewAndAdapter.ListViewAndAdapterLearningActivity" />
+        <activity android:name=".listsAndFragments.ListsAndFragmentsActivity" />
+        <activity android:name=".spinner.SpinnerActivity" />
+        <activity android:name=".dialogs.DialogsActivity" />
+        <activity android:name=".actionBarAndMenus.actionBar.ActionBarAndMenusActivity" />
+        <activity android:name=".actionBarAndMenus.upNavigation.UpNavigationActivity" />
+        <activity android:name=".actionBarAndMenus.upNavigation.ProximaActivity" >
+
+            <!--
+            android:parentActivityName=".upNavigation.UpNavigationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".upNavigation.UpNavigationActivity"
-            />-->
+            />
+            -->
         </activity>
-        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity1"/>
-        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity2"/>
-        <activity android:name=".actionBarAndMenus.PopupActivity"/>
-        <activity android:name=".navigationDrawer.NavigationDrawerActivity"/>
-        <activity android:name=".tabs.TabsActivity"/>
-    </application>
-</manifest>
+        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity1" />
+        <activity android:name=".actionBarAndMenus.actionModes.ActionModeActivity2" />
+        <activity android:name=".actionBarAndMenus.PopupActivity" />
+        <activity android:name=".navigationDrawer.NavigationDrawerActivity" >
+            <intent-filter>
+                <action android:name="com.example.cassiano.mytestapiapp.intent.action.TESTE" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabs.TabsActivity" >
+            <intent-filter>
+                <action android:name="com.example.cassiano.mytestapiapp.intent.action.TESTE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intents.IntentsActivity" />
+        <activity android:name=".intents.BrowserActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".broadcasts.BroadcastActivity" />
+        <!--
+        <receiver
+            android:name=".broadcasts.MyReceiver"
+            android:enabled="true"
+            android:exported="false" >
+
+            <intent-filter>
+                <action android:name="com.example.cassiano.mytestapiapp.broadcasts.MSG" />
+            </intent-filter>
+
+        </receiver>
+        -->
+        <receiver
+            android:name=".broadcasts.PowerReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".notificacoes.NotificacoesActivity" />
+
+        <receiver
+            android:name=".notificacoes.MyBroadcastMsg"
+            android:enabled="true"
+            android:exported="false" >
+
+            <intent-filter>
+                <action android:name="com.example.cassiano.mytesteapiapp.ACTION_BUTTON_1" />
+                <action android:name="com.example.cassiano.mytesteapiapp.ACTION_BUTTON_2" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
