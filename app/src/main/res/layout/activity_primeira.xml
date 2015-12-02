@@ -11,6 +11,18 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:text="@string/contador_notificacao"
+            android:onClick="abrirContador"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir navigation"
+            android:onClick="abrirNavigation"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:text="@string/notificacoes"
             android:onClick="aprenderNotificacoes"/>
 

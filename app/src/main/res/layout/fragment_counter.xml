@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.cassiano.mytestapiapp.notificacoes.counterNotification.CounterFragment">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/attention"
+        android:text="@string/iniciar_contagem"
+        android:textStyle="italic"
+        android:onClick="iniciarContagem"/>
+
+    <TextView
+        android:id="@+id/txtCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/zero"
+        android:textColor="@color/attention"
+        android:textSize="@dimen/large"
+        android:visibility="gone" />
+
+</FrameLayout>

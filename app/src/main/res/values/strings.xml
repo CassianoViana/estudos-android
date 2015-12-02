@@ -64,6 +64,10 @@
     <string name="notificacao1">100</string>
     <string name="mostrar_2">Mostrar 2</string>
     <string name="notificacao2">101</string>
+    <string name="notification">Notificação</string>
+    <string name="ping">Ping</string>
+    <string name="dismiss">Cancelar</string>
+    <string name="snooze">Dormir</string>
     <string-array name="comidas">
         <item>Feijão</item>
         <item>Arroz</item>
@@ -80,5 +84,20 @@
         <item>@drawable/terra</item>
         <item>@drawable/saturno</item>
     </array>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="iniciar_contagem">Iniciar!</string>
+    <string name="zero">0</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="contador_notification_title">Contador</string>
+    <string name="txt_notificacao_contador">O contador irá chegar a 100 rapidamente!</string>
+    <string name="msg_notificacao_contador_finalizado">Contador finalizado!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contador_notificacao">Contador com notificação</string>
+    <string name="msg_notificacao_contador_iniciado">Contador iniciado!</string>
 
 </resources>

@@ -24,7 +24,9 @@ import com.example.cassiano.mytestapiapp.layouts.RelativeLayoutLearningActivity;
 import com.example.cassiano.mytestapiapp.listViewAndAdapter.ListViewAndAdapterLearningActivity;
 import com.example.cassiano.mytestapiapp.listsAndFragments.ListsAndFragmentsActivity;
 import com.example.cassiano.mytestapiapp.navigationDrawer.NavigationDrawerActivity;
+import com.example.cassiano.mytestapiapp.navigationDrawer.DrawerMainActivity;
 import com.example.cassiano.mytestapiapp.notificacoes.NotificacoesActivity;
+import com.example.cassiano.mytestapiapp.notificacoes.counterNotification.CounterNotificationActivity;
 import com.example.cassiano.mytestapiapp.spinner.SpinnerActivity;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.upNavigation.UpNavigationActivity;
 import com.example.cassiano.mytestapiapp.tabs.TabsActivity;
@@ -209,6 +211,16 @@ public class PrimeiraActivity extends Activity {
 
     public void aprenderNotificacoes(View view) {
         Intent intent = new Intent(this, NotificacoesActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirNavigation(View view) {
+        Intent intent = new Intent(this, DrawerMainActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirContador(View view) {
+        Intent intent = new Intent(this, CounterNotificationActivity.class);
         startActivity(intent);
     }
 }
