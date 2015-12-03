@@ -11,6 +11,7 @@ import com.example.cassiano.mytestapiapp.actionBarAndMenus.PopupActivity;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.actionBar.ActionBarAndMenusActivity;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.actionModes.ActionModeActivity1;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.actionModes.ActionModeActivity2;
+import com.example.cassiano.mytestapiapp.alarm.AlarmActivity;
 import com.example.cassiano.mytestapiapp.asynctask.ThreadLearningActivity;
 import com.example.cassiano.mytestapiapp.backStack.BackStackLearningActivity;
 import com.example.cassiano.mytestapiapp.broadcasts.BroadcastActivity;
@@ -27,6 +28,7 @@ import com.example.cassiano.mytestapiapp.navigationDrawer.NavigationDrawerActivi
 import com.example.cassiano.mytestapiapp.navigationDrawer.DrawerMainActivity;
 import com.example.cassiano.mytestapiapp.notificacoes.NotificacoesActivity;
 import com.example.cassiano.mytestapiapp.notificacoes.counterNotification.CounterNotificationActivity;
+import com.example.cassiano.mytestapiapp.services.ServicesActivity;
 import com.example.cassiano.mytestapiapp.spinner.SpinnerActivity;
 import com.example.cassiano.mytestapiapp.actionBarAndMenus.upNavigation.UpNavigationActivity;
 import com.example.cassiano.mytestapiapp.tabs.TabsActivity;
@@ -221,6 +223,16 @@ public class PrimeiraActivity extends Activity {
 
     public void abrirContador(View view) {
         Intent intent = new Intent(this, CounterNotificationActivity.class);
+        startActivity(intent);
+    }
+
+    public void aprenderAlarme(View view) {
+        Intent intent = new Intent(this, AlarmActivity.class);
+        startActivity(intent);
+    }
+
+    public void aprenderServices(View view) {
+        Intent intent = new Intent(this, ServicesActivity.class);
         startActivity(intent);
     }
 }

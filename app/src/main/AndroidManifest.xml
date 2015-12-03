@@ -73,18 +73,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".broadcasts.BroadcastActivity" />
-        <!--
-        <receiver
-            android:name=".broadcasts.MyReceiver"
-            android:enabled="true"
-            android:exported="false" >
+        <activity android:name=".notificacoes.NotificacoesActivity" />
+        <activity
+            android:name=".navigationDrawer.DrawerMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".notificacoes.counterNotification.CounterNotificationActivity" />
 
-            <intent-filter>
-                <action android:name="com.example.cassiano.mytestapiapp.broadcasts.MSG" />
-            </intent-filter>
-
-        </receiver>
-        -->
         <receiver
             android:name=".broadcasts.PowerReceiver"
             android:enabled="true"
@@ -94,9 +88,6 @@
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
         </receiver>
-
-        <activity android:name=".notificacoes.NotificacoesActivity" />
-
         <receiver
             android:name=".notificacoes.MyBroadcastMsg"
             android:enabled="true"
@@ -106,14 +97,30 @@
                 <action android:name="com.example.cassiano.mytesteapiapp.ACTION_BUTTON_2" />
             </intent-filter>
         </receiver>
+        <!--
+        <receiver
+            android:name=".broadcasts.MyReceiver"
+            android:enabled="true"
+            android:exported="false" >
 
-        <activity
-            android:name=".notificacoes.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".notificacoes.counterNotification.CounterNotificationActivity" >
-        </activity>
+            <intent-filter>
+                <action android:name="com.example.cassiano.mytestapiapp.broadcasts.MSG" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <service android:name=".notificacoes.counterNotification.CounterNotificationManager$NotificationActionService" />
+
+        <activity android:name=".alarm.AlarmActivity" />
+
+        <receiver android:name=".alarm.AlarmReceiver" />
+
+        <activity android:name=".services.ServicesActivity"/>
+        <service
+            android:name=".services.TimeService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
     </application>
 
 </manifest>

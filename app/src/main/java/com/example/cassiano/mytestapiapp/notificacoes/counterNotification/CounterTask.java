@@ -32,11 +32,14 @@ public class CounterTask extends AsyncTask<Integer, Integer, Void> {
     protected Void doInBackground(Integer... params) {
 
         max = params[0];
-        for (int i = 0; i < max; i++) {
-            SystemClock.sleep(50);
-            publishProgress(i);
-            Log.d("counter", "Contador:"+i);
+        int count = 0;
+        while(!isCancelled() && count < max){
+            SystemClock.sleep(30);
+            publishProgress(count);
+            Log.d("counter", "Contador:" + count);
+            count ++;
         }
+
         return null;
     }
 

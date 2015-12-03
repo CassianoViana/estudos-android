@@ -13,11 +13,55 @@ import com.example.cassiano.mytestapiapp.R;
 
 public class CounterFragment extends Fragment implements CounterListener {
 
+
+    private interface Tela {
+        int getVisibilidadeBtn();
+
+        int getVisibilidadeText();
+    }
+
+    private enum EstadoTela implements Tela {
+        RODANDO {
+            @Override
+            public int getVisibilidadeBtn() {
+                return View.GONE;
+            }
+
+            @Override
+            public int getVisibilidadeText() {
+                return View.VISIBLE;
+            }
+        },
+        PAUSADO {
+            @Override
+            public int getVisibilidadeBtn() {
+                return View.VISIBLE;
+            }
+
+            @Override
+            public int getVisibilidadeText() {
+                return View.GONE;
+            }
+        }
+    }
+
+    @SuppressWarnings("ResourceType")
+    private void setEstadoTela(EstadoTela estadoTela) {
+        btnStart.setVisibility(estadoTela.getVisibilidadeBtn());
+        txtCounter.setVisibility(estadoTela.getVisibilidadeText());
+    }
+
     private OnFragmentInteractionListener mListener;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("estado", "rodando");
     }
 
     private Button btnStart;
@@ -30,6 +74,9 @@ public class CounterFragment extends Fragment implements CounterListener {
         View view = inflater.inflate(R.layout.fragment_counter, container, false);
         configuraBtns(view);
         configuraLabel(view);
+
+        setEstadoTela(EstadoTela.PAUSADO);
+
         return view;
     }
 
@@ -66,19 +113,17 @@ public class CounterFragment extends Fragment implements CounterListener {
 
     @Override
     public void contagemIniciou(int max) {
-        txtCounter.setText("0");
-        txtCounter.setVisibility(View.VISIBLE);
-        btnStart.setVisibility(View.GONE);
+        setEstadoTela(EstadoTela.RODANDO);
     }
 
     @Override
     public void contagemAlterou(int passo) {
-        txtCounter.setText(String.valueOf(passo+1));
+        txtCounter.setText(String.valueOf(passo + 1));
     }
 
     @Override
     public void contagemFinalizou(boolean cancelado) {
-
+        setEstadoTela(EstadoTela.PAUSADO);
     }
 
     public interface OnFragmentInteractionListener {
