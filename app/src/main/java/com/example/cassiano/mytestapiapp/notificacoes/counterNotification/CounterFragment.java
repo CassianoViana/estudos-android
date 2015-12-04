@@ -123,6 +123,9 @@ public class CounterFragment extends Fragment implements CounterListener {
 
     @Override
     public void contagemFinalizou(boolean cancelado) {
+        if(cancelado) {
+            txtCounter.setText("Cancelado");
+        }
         setEstadoTela(EstadoTela.PAUSADO);
     }
 

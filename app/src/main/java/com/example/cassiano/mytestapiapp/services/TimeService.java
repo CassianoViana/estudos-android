@@ -2,13 +2,17 @@ package com.example.cassiano.mytestapiapp.services;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
+
+import java.sql.Time;
 
 public class TimeService extends Service {
 
     private static final String TAG = "App";
     private TimerWorker worker;
+    private TimeServiceBinder binder = new TimeServiceBinder();
 
     @Override
     public void onCreate() {
@@ -32,6 +36,16 @@ public class TimeService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        return null;
+        return binder;
+    }
+
+    public int getSegundos() {
+        return worker.getSeconds();
+    }
+
+    public class TimeServiceBinder extends Binder {
+        public TimeService getService() {
+            return TimeService.this;
+        }
     }
 }

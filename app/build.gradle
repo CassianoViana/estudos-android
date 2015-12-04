@@ -36,4 +36,5 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile files('libs/commons-lang3-3.4.jar')
     compile files('libs/commons-lang3-3.4-javadoc.jar')
+    compile 'com.google.android.gms:play-services:8.3.0'
 }

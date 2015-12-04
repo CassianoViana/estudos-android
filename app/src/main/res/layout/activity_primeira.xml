@@ -11,6 +11,18 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:text="@string/ler_localizacao"
+            android:onClick="lerLocalizacao"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_google_apis"
+            android:onClick="testarGoogleApis"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:text="@string/Services"
             android:onClick="aprenderServices"/>
 

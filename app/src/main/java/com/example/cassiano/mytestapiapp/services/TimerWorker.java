@@ -12,24 +12,30 @@ public class TimerWorker implements Runnable {
     private static final String TAG = "App";
     private Service service;
     private volatile boolean rodando;
+    int seconds = 0;
 
     @Override
     public void run() {
 
-        int seconds = 0;
         rodando = true;
 
-        while(rodando){
-            seconds++;
-            Log.i(TAG, "Segundos = "+seconds);
+        while (rodando) {
+            incrementar();
+            Log.i(TAG, "Segundos = " + seconds);
             SystemClock.sleep(1000);
         }
-
         parar();
-
     }
 
-    public void parar(){
+    public void parar() {
         rodando = false;
+    }
+
+    private synchronized void incrementar() {
+        seconds++;
+    }
+
+    public synchronized int getSeconds() {
+        return seconds;
     }
 }

@@ -52,8 +52,7 @@ public class CounterNotificationManager implements CounterListener {
                 .setSmallIcon(android.R.drawable.ic_media_play)
                 .setContentTitle(context.getResources().getString(R.string.contador_notification_title))
                 .setContentText(msg)
-                .addAction(android.R.drawable.ic_menu_close_clear_cancel,
-                        context.getString(R.string.dismiss), pendingIntentCancel)
+                .addAction(android.R.drawable.ic_media_pause, context.getString(R.string.parar), pendingIntentCancel)
                 .setContentIntent(pendingIntentCancel)
                 .build();
     }
@@ -68,7 +67,7 @@ public class CounterNotificationManager implements CounterListener {
     @Override
     public void contagemAlterou(int passo) {
         builder.setProgress(1000, passo, false).setContentText("Contador: " + passo);
-        //notificationManager.notify(id, builder.build());
+        notificationManager.notify(id, builder.build());
     }
 
     @Override

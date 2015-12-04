@@ -9,7 +9,6 @@ public class MyBroadcastMsg extends BroadcastReceiver {
 
     public static final String ACTION_BUTTON_1 = "com.example.cassiano.mytesteapiapp.ACTION_BUTTON_1";
     public static final String ACTION_BUTTON_2 = "com.example.cassiano.mytesteapiapp.ACTION_BUTTON_2";
-    public static final String ACTION_CANCELAR_CONTADOR = "com.example.cassiano.mytesteapiapp.ACTION_CANCELAR_CONTADOR";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -23,12 +22,7 @@ public class MyBroadcastMsg extends BroadcastReceiver {
             case ACTION_BUTTON_2:
                 metodo2(context);
                 break;
-            case ACTION_CANCELAR_CONTADOR:
-                metodo3(context);
         }
-    }
-
-    private void metodo3(Context context) {
     }
 
     private void metodo1(Context context) {

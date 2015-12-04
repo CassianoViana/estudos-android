@@ -101,5 +101,13 @@
     <string name="msg_notificacao_contador_iniciado">Contador iniciado!</string>
     <string name="agendar">Agendar</string>
     <string name="Services">Services</string>
+    <string name="segundos">Segundos</string>
+    <string name="ler_service1">Ler 1° serviço</string>
+    <string name="ler_service2">Ler 2° serviço</string>
+    <string name="test_google_apis">Testar Google Apis</string>
+    <string name="ler_localizacao">Ler localização</string>
+    <string name="latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="parar">Parar</string>
 
 </resources>

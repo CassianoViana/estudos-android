@@ -34,7 +34,7 @@ public class CounterTask extends AsyncTask<Integer, Integer, Void> {
         max = params[0];
         int count = 0;
         while(!isCancelled() && count < max){
-            SystemClock.sleep(30);
+            SystemClock.sleep(1000);
             publishProgress(count);
             Log.d("counter", "Contador:" + count);
             count ++;

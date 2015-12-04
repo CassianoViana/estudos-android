@@ -19,6 +19,8 @@ import com.example.cassiano.mytestapiapp.communication.FragmentsCommunicationtAc
 import com.example.cassiano.mytestapiapp.dialogs.DialogsActivity;
 import com.example.cassiano.mytestapiapp.fragments.DynamicFragmentActivity;
 import com.example.cassiano.mytestapiapp.fragments.StaticFragmentActivity;
+import com.example.cassiano.mytestapiapp.gooleapis.GoogleApisActivity;
+import com.example.cassiano.mytestapiapp.gooleapis.localizacao.ReadLocalizationActivity;
 import com.example.cassiano.mytestapiapp.intents.IntentsActivity;
 import com.example.cassiano.mytestapiapp.layouts.LinearLayoutLearningActivity;
 import com.example.cassiano.mytestapiapp.layouts.RelativeLayoutLearningActivity;
@@ -233,6 +235,16 @@ public class PrimeiraActivity extends Activity {
 
     public void aprenderServices(View view) {
         Intent intent = new Intent(this, ServicesActivity.class);
+        startActivity(intent);
+    }
+
+    public void testarGoogleApis(View view) {
+        Intent intent = new Intent(this, GoogleApisActivity.class);
+        startActivity(intent);
+    }
+
+    public void lerLocalizacao(View view) {
+        Intent intent = new Intent(this, ReadLocalizationActivity.class);
         startActivity(intent);
     }
 }
